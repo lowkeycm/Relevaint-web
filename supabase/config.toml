@@ -1,0 +1,6 @@
+project_id = "ohqsziwcvvzxryfgzkvx"
+
+[functions.relevaint-web-inquiry]
+# Authenticated by a dedicated SHA-256-verified token in the handler.
+verify_jwt = false
+entrypoint = "./functions/relevaint-web-inquiry/index.js"

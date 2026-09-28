@@ -14,16 +14,22 @@ The homepage is server-rendered. All five service pages are generated as HTML du
 
 `SITE_URL` controls the canonical origin; otherwise Vercel's production domain is used. Set it to `https://relevaint.io` when that domain is attached. Deployment authentication blocks public crawlers regardless of the HTML. Domain cutover and access policy are separate deployment settings.
 
-## Inquiries: connection pending
+## Inquiries
 
-The original Site used Cloudflare D1 and ChatGPT account authentication. Neither is portable to Vercel as-is. No customer data or credentials have been copied into this public repository.
+Production submissions go to the dedicated `public.relevaint_inquiries` table in RelevAInt → RelevAInt AIOS (`ohqsziwcvvzxryfgzkvx`). Existing AIOS tables and earlier Site records are unchanged. Authorized project members can review new records in the Supabase dashboard; `/inquiries` links there and to the original owner-protected Site inbox for earlier records. No notification email or follow-up automation is configured.
 
-Until a Relevaint database is chosen and configured, the public contact section provides email and booking links. It does not offer a form that cannot save. The form and validation remain implemented and activate when both server-only variables are configured:
+The Next.js route validates the form, origin and honeypot. A dedicated Supabase Edge Function authenticates Vercel using a random 384-bit token, validates again, and invokes a service-only database function. The function enforces idempotency and a maximum of three submissions per email in five minutes. This is basic abuse protection, not a complete anti-spam service. Table RLS is enabled with no public policies; anonymous and authenticated API roles have no table or RPC access. Project administrators retain dashboard access.
 
-- `SUPABASE_URL`
-- `SUPABASE_SECRET_KEY` (new `sb_secret_` key; never expose as NEXT_PUBLIC)
+Production-only Vercel variables:
 
-Before enabling the form, run `db/inquiries-setup.sql` in the selected project. It creates the protected inquiry table and service-only RPC with idempotency and rate limiting. Test saving and retrieval before production activation. This database setup has been prepared, not applied or end-to-end verified. The new inquiry inbox/authentication still needs a decision; use the Supabase dashboard for records after setup. `/inquiries` links to the existing owner-protected Site inbox for earlier records only.
+- `INQUIRY_INGRESS_URL`: the deployed `relevaint-web-inquiry` endpoint.
+- `INQUIRY_INGRESS_TOKEN`: encrypted Secret, never `NEXT_PUBLIC_`.
+
+The website has no project-wide Supabase key. Only the token's SHA-256 digest is in Edge Function source. The Edge Function uses Supabase's automatically supplied server key internally (new secret-key format when available, with legacy runtime fallback). Neither that key nor the plaintext ingress token belongs in Git. Preview environments fall back to email and booking while these variables are absent.
+
+`db/inquiries-setup.sql` records the applied initial schema migration. Do not rerun it as a seed. `supabase/functions/relevaint-web-inquiry/index.js` and `supabase/config.toml` contain the deployed function and its custom-auth configuration.
+
+To rotate the ingress token, generate a fresh cryptographically random 48-byte token, replace the expected SHA-256 digest in the Edge Function, deploy it, then replace the encrypted Vercel Production secret and redeploy the website. Schedule this together: submissions during the short transition receive a retry message and keep their form input. Never place the plaintext token in a commit or build log.
 
 ## Current migration
 
