@@ -1,0 +1,19 @@
+[
+  {
+    "output": "public/media/creative/rtv-studio.mp4",
+    "sha256": "413f8b920b5428279bb207911b9e3a13cf9bf127fe8ad9c3ae0bbd0cdfcb4898",
+    "parts": [
+      "assets/video/rtv-studio.mp4.part01",
+      "assets/video/rtv-studio.mp4.part02",
+      "assets/video/rtv-studio.mp4.part03"
+    ]
+  },
+  {
+    "output": "public/media/creative/cars-commercial.mp4",
+    "sha256": "01c096e7fa7954c22985893df2350c2975cff6f22a8aed32e3efd06fb415765c",
+    "parts": [
+      "assets/video/cars-commercial.mp4.part01",
+      "assets/video/cars-commercial.mp4.part02"
+    ]
+  }
+]
