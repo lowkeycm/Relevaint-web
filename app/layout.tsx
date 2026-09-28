@@ -12,8 +12,9 @@ export const metadata: Metadata = {
   title: "Relevaint | Websites, creative & connected systems",
   description: "Help the right customers see your value and take the next step. Websites, creative, and connected follow-up for established businesses.",
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: [{url:"/favicon-relevaint.png",type:"image/png",sizes:"48x48"},{url:"/favicon.ico?v=2",sizes:"16x16 32x32 48x48"}],
+    shortcut: "/favicon.ico?v=2",
+    apple: "/apple-touch-icon.png",
   },
 };
 
