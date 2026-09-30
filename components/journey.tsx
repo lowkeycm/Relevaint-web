@@ -57,7 +57,7 @@ export default function Journey(){
    <button className="motion-control" aria-pressed={manualReduced} onClick={toggle}>{manualReduced?'Enable motion':'Reduce motion'}</button>
    <div className="journey-heading"><h2>From discovery to customer.</h2><p>Help people take the next step.</p></div>
    <div className="journey-story"><div className="journey-message"><span className="journey-chapter">{stages[active].label}</span><h3>{stages[active].title}</h3><p>{stages[active].body}</p><div className="journey-payoff"><span aria-hidden="true">↗</span>{stages[active].next}</div><span className="journey-service">{stages[active].service}</span></div>
-   <div className="journey-visual"><div className="journey-canvas" ref={mount} aria-hidden="true"/>{status!=='ready'&&<div className="journey-loading" aria-hidden="true">{stages[active].label}</div>}<p className="journey-scene-caption">{stages[active].label}<span>Illustrative customer journey</span></p></div></div>
+   <div className="journey-visual"><div className="journey-canvas" ref={mount} aria-hidden="true"/>{status!=='ready'&&<div className="journey-loading" aria-hidden="true">{stages[active].label}</div>}<p className="journey-scene-caption">{stages[active].label}</p></div></div>
    <div className="journey-controls" aria-label="Journey stages">{stages.map((s,i)=><button key={s.label} onClick={()=>go(i)} className={i===active?'active':''} aria-current={i===active?'step':undefined}><span className="journey-step-track" aria-hidden="true"/>{s.label}</button>)}</div>
   </div>
   <div className="journey-accessible">{stages.map(s=><article key={s.label}><span>{s.label}</span><h3>{s.title}</h3><p>{s.body}</p></article>)}</div>

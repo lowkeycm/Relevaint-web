@@ -19,13 +19,13 @@ export function JourneyCarousel({cards,kind='system'}:{cards:JourneyCard[];kind?
  return <section className={`journey-carousel journey-carousel-${kind}`} aria-label={kind==='system'?'Explore the connected customer journey':'Explore follow-up services'} aria-roledescription="carousel" onKeyDown={e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();go(e.key==='ArrowRight'?1:-1);}}}>
   <div className="orbit-intro"><span className="eyebrow">{kind==='system'?'ONE CUSTOMER. EVERY CONNECTION.':'FOLLOW-UP THAT FITS THE MOMENT'}</span><p>Swipe, use the arrows, or choose a step.</p></div>
   <div className="journey-orbit" onPointerDown={onDown} onPointerUp={onUp} onPointerCancel={()=>{pointer.current=null;}} onClickCapture={e=>{if(dragged.current){e.preventDefault();e.stopPropagation();dragged.current=false;}}}>
-   <div className="orbit-track" aria-hidden="true"/>
+   <div className="journey-orbit-track" aria-hidden="true"/>
    {cards.map((card,i)=>{let offset=(i-active+cards.length)%cards.length;if(offset>cards.length/2)offset-=cards.length;const Icon=(kind==='system'?systemIcons:followIcons)[i];const selected=i===active;const title=card.title.includes(': ')?card.title.split(': ').slice(1).join(': '):card.title;return <article key={card.title} className={`orbit-card ${selected?'is-active':''}`} style={{'--offset':offset,'--distance':Math.abs(offset),zIndex:10-Math.abs(offset)} as CSSProperties} aria-roledescription="slide" aria-label={`${i+1} of ${cards.length}: ${names[i]}`}>
     <button type="button" className="orbit-select" onClick={()=>setActive(i)} aria-label={`Show ${names[i]}`} aria-pressed={selected}><span>0{i+1} / {names[i]}</span><Icon size={25} strokeWidth={1.5}/></button>
     <div className="orbit-card-copy" inert={!selected}><h3>{title}</h3>{card.paragraphs.filter(p=>!p.startsWith('**')).map(p=><p key={p}>{p}</p>)}{card.href&&<a href={card.href}>{card.linkLabel}<ArrowUpRight size={18}/></a>}</div>
    </article>})}
   </div>
-  <div className="orbit-controls"><button type="button" onClick={()=>go(-1)} aria-label="Previous step"><ArrowLeft size={20}/></button><div className="orbit-counter" aria-live="polite"><strong>{String(active+1).padStart(2,'0')}</strong><span>of {String(cards.length).padStart(2,'0')}</span></div><button type="button" onClick={()=>go(1)} aria-label="Next step"><ArrowRight size={20}/></button></div>
+  <div className="journey-orbit-controls"><button type="button" onClick={()=>go(-1)} aria-label="Previous step"><ArrowLeft size={20}/></button><div className="orbit-counter" aria-live="polite"><strong>{String(active+1).padStart(2,'0')}</strong><span>of {String(cards.length).padStart(2,'0')}</span></div><button type="button" onClick={()=>go(1)} aria-label="Next step"><ArrowRight size={20}/></button></div>
   <div className="orbit-pagination" role="group" aria-label="Choose a step">{cards.map((card,i)=><button type="button" key={card.title} onClick={()=>setActive(i)} aria-pressed={i===active}><span>0{i+1}</span>{names[i]}</button>)}</div>
  </section>;
 }

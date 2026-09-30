@@ -193,8 +193,7 @@ export const serviceCopy = {
         "level": 3,
         "title": "See what a useful customer record holds.",
         "paragraphs": [
-          "Explore the example to see how an inquiry, conversation notes, and a follow-up task fit together.",
-          "Example information only; your setup will reflect your business."
+          "See how an inquiry, conversation notes, and a follow-up task fit together."
         ]
       },
       {
@@ -262,8 +261,7 @@ export const serviceCopy = {
         "level": 3,
         "title": "Walk through an example.",
         "paragraphs": [
-          "See how an inquiry reaches your team, how AI can prepare a reply, and where a person reviews and takes over.",
-          "This demonstration uses example information and does not send messages."
+          "See how an inquiry reaches your team, how AI can prepare a reply, and where a person reviews and takes over."
         ]
       },
       {
