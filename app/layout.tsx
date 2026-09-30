@@ -5,12 +5,14 @@ import "./redesign.css";
 import "./service-world.css";
 import "./service-media.css";
 import "./purposeful-depth.css";
+import "./copy-review.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  ...(process.env.RELEVAINT_REVIEW === "1" ? {robots:{index:false,follow:false}} : {}),
   openGraph:{type:"website",siteName:"Relevaint",locale:"en_US",images:[{url:"/media/business-neighborhood.webp",width:1536,height:1024,alt:"Relevaint: your business, improved"}]},
-  title: "Relevaint | Websites, creative & connected systems",
-  description: "Help the right customers see your value and take the next step. Websites, creative, and connected follow-up for established businesses.",
+  title: "Relevaint | Video ads, websites, CRM & follow-up",
+  description: "Relevaint creates video ads, builds websites, and sets up customer management and follow-up systems for small businesses. One project or a connected system.",
   icons: {
     icon: [{url:"/favicon-relevaint.png",type:"image/png",sizes:"48x48"},{url:"/favicon.ico?v=2",sizes:"16x16 32x32 48x48"}],
     shortcut: "/favicon.ico?v=2",

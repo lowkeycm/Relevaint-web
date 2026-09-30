@@ -1,0 +1,14 @@
+'use client';
+import {ArrowUpRight,Film,Globe,MessageCircle} from 'lucide-react';
+import {LayerTrack} from './workflow-scenes';
+const gaps=[
+ {title:'Your work is better than your marketing looks.',text:'People may pass you over before they understand what you offer.',icon:Film},
+ {title:'Your website leaves questions unanswered.',text:'A visitor who might have called keeps looking instead.',icon:Globe},
+ {title:'Inquiries get buried or follow-up gets forgotten.',text:'An interested customer is left waiting while your team handles the day.',icon:MessageCircle},
+];
+export function BusinessGaps(){return <LayerTrack className="service-stack business-gaps"><section className="service-stack-section" id="services"><div className="stack-intro"><p className="eyebrow">WHEN INTEREST DOESN’T BECOME BUSINESS</p><h2>Where are potential customers getting stuck?</h2><p>Someone notices your business, visits your website, and considers getting in touch. Each step can help them move forward—or give them a reason to leave.</p></div><div className="stack-options">{gaps.map(({title,text,icon:Icon},i)=><article className={`service-sheet service-sheet-${i}`} data-sc-act="flow" key={title}><div className="service-sheet-top"><span>0{i+1}</span><Icon size={30} strokeWidth={1.3}/></div><h3>{title}</h3><p>{text}</p></article>)}</div></section><div className="gap-resolution"><p>Relevaint helps you fix those gaps. That might mean a stronger video, a clearer website, or a better way to manage and follow up with inquiries. We help you choose the priority, then build it.</p><a href="#contact" className="text-link">Talk about your business <ArrowUpRight size={18}/></a></div></LayerTrack>}
+export function EngagementChoices(){return <section className="engagement-section section"><div className="engagement-heading reveal"><p className="eyebrow">WAYS TO WORK TOGETHER</p><h2>Start with the<br/>help you need.</h2></div><div className="engagement-options">{[
+ ['One project','A new website. A set of video ads. A CRM setup. A follow-up sequence. Choose a defined project that solves a specific problem.','Talk about a project','/#contact'],
+ ['A connected system','Bring creative, your website, customer information, and follow-up together. We’ll plan how each part works and how information moves between them.','Explore the connected system','/services/connected-system'],
+ ['An ongoing partner','Keep improving with fresh creative, website updates, and support for the systems we agree to maintain. Priorities and scope are decided together.','Discuss ongoing help','/#contact']
+ ].map(([title,body,cta,href],i)=><article className="reveal" key={title}><span className="eyebrow">0{i+1}</span><h3>{title}</h3><p>{body}</p><a href={href} className="text-link">{cta}<ArrowUpRight size={17}/></a></article>)}</div></section>}
