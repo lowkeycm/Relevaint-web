@@ -15,3 +15,25 @@
 @media(max-width:760px){.site-header .services-menu-trigger{display:none}.world-scene{height:350px}.neighborhood{bottom:-10px}.capability-orbit{top:58px}.orbit-controls{bottom:-3px}.world-promise{max-width:340px}.world-promise br{display:block}}
 @media(prefers-reduced-motion:reduce){.capability-orbit{transform:none}}
 .orbit-controls button{min-width:44px;min-height:44px}.orbit-controls .motion-toggle{min-width:0}
+
+/* Keep the dismiss control visible even when the menu exceeds a phone's height. */
+.mobile-nav-dialog {
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  top:max(16px,env(safe-area-inset-top));
+  translate:-50% 0;
+  transform:none;
+  max-height:calc(100dvh - 32px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+  padding:24px!important;
+  overflow:hidden;
+}
+.mobile-nav-heading {display:flex;align-items:flex-start;gap:16px;flex-shrink:0}
+.mobile-nav-heading>div {flex:1;min-width:0}
+.mobile-nav-heading [data-slot=dialog-title] {font-size:20px;line-height:1.3}
+.mobile-nav-heading [data-slot=dialog-description] {margin-top:10px;line-height:1.5}
+.mobile-nav-close {display:grid;place-items:center;flex:0 0 44px;width:44px;height:44px;border:1px solid #b6c1aa;border-radius:50%;background:#fffdf6;color:#243c30;cursor:pointer;touch-action:manipulation}
+.mobile-nav-close:focus-visible {outline:3px solid #a74722;outline-offset:3px}
+.mobile-nav-links {min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+.mobile-nav-links>a {display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:52px;padding:12px 0;font-size:20px;line-height:1.3;border-bottom:1px solid #34463220}
+.mobile-nav-links>a>svg {flex-shrink:0}
