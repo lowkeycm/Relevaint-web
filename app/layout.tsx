@@ -7,6 +7,7 @@ import "./service-media.css";
 import "./purposeful-depth.css";
 import "./copy-review.css";
 import "./journey-interactions.css";
+import "./journey-film.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

@@ -1,0 +1,20 @@
+{
+  "request": {
+    "user_request": "Create the Relevaint ad to website to CRM to follow-up to sale motion piece and embed it in an unmerged website preview. Proposed 22-second silent desktop and mobile versions.",
+    "deliverables": [
+      {
+        "id": "journey-desktop",
+        "file": "renders/journey.mp4",
+        "width": 1920,
+        "height": 1080,
+        "duration_min": 22,
+        "duration_max": 22,
+        "audio": "silent",
+        "required_media": [
+          "motion"
+        ]
+      }
+    ]
+  },
+  "sha256": "b0dff9d3050205e0b321321faa11060b80115888b4db4569fa50aa1be91722e0"
+}

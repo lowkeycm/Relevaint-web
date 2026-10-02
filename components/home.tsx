@@ -8,6 +8,7 @@ import {Textarea} from '@/components/ui/textarea';
 import SiteHeader from './site-header';
 import {BusinessGaps,EngagementChoices} from './business-gaps';
 import BusinessWorld from './business-world';
+import JourneyFilm from './journey-film';
 import {capabilities} from '@/lib/services';
 function newInquiryId(){const bytes=crypto.getRandomValues(new Uint8Array(16));bytes[6]=(bytes[6]&15)|64;bytes[8]=(bytes[8]&63)|128;const h=Array.from(bytes,b=>b.toString(16).padStart(2,'0')).join('');return `${h.slice(0,8)}-${h.slice(8,12)}-${h.slice(12,16)}-${h.slice(16,20)}-${h.slice(20)}`;}
 const inquiryLabel=(value:string)=>value==='Sales tools & integrations'?'CRM & customer management':value==='Funnels & follow-up'?'Follow-up':value;
@@ -33,6 +34,7 @@ export default function Home({inquiryEnabled=true}:{inquiryEnabled?:boolean}){
  async function submit(e:FormEvent<HTMLFormElement>){e.preventDefault();setError('');setSending(true);const data=Object.fromEntries(new FormData(e.currentTarget));try{const res=await fetch('/api/inquiries',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...data,service,id:requestId.current})});const json=await res.json() as {error?:string};if(!res.ok)throw new Error(json.error||'We couldn’t save your inquiry. Please try again.');setSent(true);}catch(e){setError(e instanceof Error?e.message:'Something went wrong. Please try again.');}finally{setSending(false);}}
  return <><SiteHeader/><main id="main">
  <BusinessWorld/>
+ <JourneyFilm/>
  <BusinessGaps/>
  <section className="work-section section" id="work"><div className="work-intro reveal"><h2>See what<br/>we’ve built.</h2><p>Explore websites, creative, and customer management projects. See the work itself and the part Relevaint played.</p></div><div className="work-gallery">{projects.map((p,i)=><button key={p.name} className={`work-piece work-piece-${i} reveal`} onClick={()=>setProject(i)} aria-label={`Explore ${p.name} project`}><div className={`work-image ${p.theme}`}><img src={p.image} alt={`${p.name} website ${i?'design preview':'homepage'}`} loading="lazy" width="1200" height="750"/><span className="work-open"><ArrowUpRight size={25}/></span></div><div className="work-caption"><span>{p.status}</span><h3>{p.name}</h3><p>{p.heading}</p><span className="work-scope-label">{p.category}</span></div></button>)}</div></section>
  <EngagementChoices/>

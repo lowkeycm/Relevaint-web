@@ -1,0 +1,161 @@
+{
+  "id": "journey-desktop",
+  "render_sha256": "22faab5a11633b7048c93b19a14f90d3a4eacad748286632ca30def399d7afd9",
+  "source_sha256": "e30bc3c5d7ecaa678ce6fb437f5ee6550c30dbdb94ed156117f33ec3d13c12b0",
+  "media": {
+    "width": 1920,
+    "height": 1080,
+    "duration": 22.0,
+    "container_duration": 22.0,
+    "audio": false
+  },
+  "frames": [
+    {
+      "scene": "intro",
+      "kind": "entry",
+      "time": 0,
+      "file": "qa/journey-desktop/frame-000.png",
+      "sha256": "52338554c218c7e7ea889d83e0a55e98070a42f988feabc1738fbe44b48cb31a"
+    },
+    {
+      "scene": "intro",
+      "kind": "hero",
+      "time": 1.166666,
+      "file": "qa/journey-desktop/frame-001.png",
+      "sha256": "969637875916771952c98248f161c20b26d09d7840d0d6844e6fee6c188ee927"
+    },
+    {
+      "scene": "intro",
+      "kind": "exit",
+      "time": 2.333332,
+      "file": "qa/journey-desktop/frame-002.png",
+      "sha256": "f7a20e5797a46e99baa89c37f45b15c20c20c20431a60fedc06f2eff26d0a375"
+    },
+    {
+      "scene": "creative",
+      "kind": "entry",
+      "time": 2.416666,
+      "file": "qa/journey-desktop/frame-003.png",
+      "sha256": "98f808cd141411c61966db9b91580d86b13b9b1d3146bd006db8e2156a386820"
+    },
+    {
+      "scene": "creative",
+      "kind": "hero",
+      "time": 3.916666,
+      "file": "qa/journey-desktop/frame-004.png",
+      "sha256": "22c0aefe6dce4b1470f3b1032a60727535ee277af520fc5c91a906fd0e9476ca"
+    },
+    {
+      "scene": "creative",
+      "kind": "exit",
+      "time": 5.458332,
+      "file": "qa/journey-desktop/frame-005.png",
+      "sha256": "c4faf5e1bc37ada3d943f15010875cfcf552ff7666db7ce3f8e045db5cf0f61e"
+    },
+    {
+      "scene": "websites",
+      "kind": "entry",
+      "time": 5.499999,
+      "file": "qa/journey-desktop/frame-006.png",
+      "sha256": "d13be71d128423578830d8f74ce0c132b538d62cff807cfe46da6df55f683cae"
+    },
+    {
+      "scene": "websites",
+      "kind": "hero",
+      "time": 7.041666,
+      "file": "qa/journey-desktop/frame-007.png",
+      "sha256": "344beada8cd21725530f003211bab745016b0e832dcb5d52a427ea22e21451bc"
+    },
+    {
+      "scene": "websites",
+      "kind": "exit",
+      "time": 8.541666,
+      "file": "qa/journey-desktop/frame-008.png",
+      "sha256": "5e5ff4901e210537acf572273f120ae6a0cc5471bc959be955d2fc765366a959"
+    },
+    {
+      "scene": "crm",
+      "kind": "entry",
+      "time": 8.624999,
+      "file": "qa/journey-desktop/frame-009.png",
+      "sha256": "1ace6c3d277da2ddd474eaf5d7286eb8c98431632d04dc0f735330fdfa12eaeb"
+    },
+    {
+      "scene": "crm",
+      "kind": "hero",
+      "time": 10.124999,
+      "file": "qa/journey-desktop/frame-010.png",
+      "sha256": "9dcd35eefacf9d80db6d2a858079f274241ae6a6579323adef2ec0a860c5c929"
+    },
+    {
+      "scene": "crm",
+      "kind": "exit",
+      "time": 11.624999,
+      "file": "qa/journey-desktop/frame-011.png",
+      "sha256": "91ec1f9e3ff3fe3997b066fdfa8417669a129d071d4d8bc9b62f06444b20846f"
+    },
+    {
+      "scene": "follow-up",
+      "kind": "entry",
+      "time": 11.708332,
+      "file": "qa/journey-desktop/frame-012.png",
+      "sha256": "8424e6e066da29a87cf7c3e325f765b3a56b49eeacbc9cfd752554a4fd29978e"
+    },
+    {
+      "scene": "follow-up",
+      "kind": "hero",
+      "time": 13.249999,
+      "file": "qa/journey-desktop/frame-013.png",
+      "sha256": "c02403ea6b72cd9cacf3bede616f4953fa61c8af615f2ffebcf91b4fc3a83956"
+    },
+    {
+      "scene": "follow-up",
+      "kind": "exit",
+      "time": 14.749999,
+      "file": "qa/journey-desktop/frame-014.png",
+      "sha256": "b066e2ec53ee94c8b861e1e05dd65b15d5c18029bfc0c6acb464313e30d660c6"
+    },
+    {
+      "scene": "connected-system",
+      "kind": "entry",
+      "time": 14.833332,
+      "file": "qa/journey-desktop/frame-015.png",
+      "sha256": "bd32f774b8e34e2c4b3b9753149fa323e0fa6a225d965fc838020001597feb5e"
+    },
+    {
+      "scene": "connected-system",
+      "kind": "hero",
+      "time": 16.333332,
+      "file": "qa/journey-desktop/frame-016.png",
+      "sha256": "97e815ca2599979f7d3e2b6e38ac44165be7cdfd2821d985481045a9b2008152"
+    },
+    {
+      "scene": "connected-system",
+      "kind": "exit",
+      "time": 17.833332,
+      "file": "qa/journey-desktop/frame-017.png",
+      "sha256": "811cef43694322b39fff2e3df9d3f580b32ef61b57dee47ad83dc7a9633612f1"
+    },
+    {
+      "scene": "outro",
+      "kind": "entry",
+      "time": 17.916666,
+      "file": "qa/journey-desktop/frame-018.png",
+      "sha256": "e3e157e79391a7eab25eb6455204b8d21698cbef2faa65f8208d38a43206cedd"
+    },
+    {
+      "scene": "outro",
+      "kind": "hero",
+      "time": 19.916666,
+      "file": "qa/journey-desktop/frame-019.png",
+      "sha256": "b9a8e7ffa39f598fab0ca5811516d758a35092d87c96aa1b12977be3489eb0f4"
+    },
+    {
+      "scene": "outro",
+      "kind": "exit",
+      "time": 21.958332,
+      "file": "qa/journey-desktop/frame-020.png",
+      "sha256": "1606ebbb2f789416dfc5ce23504da43d38e00eaa0ef4a4c49282608748a7275a"
+    }
+  ]
+}

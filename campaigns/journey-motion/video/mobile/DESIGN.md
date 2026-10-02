@@ -1,0 +1,2 @@
+# Relevaint journey
+Execution of ../../../../docs/brand-platform.md and the established website, not a new brand profile. Ivory #f5f2ec, forest #263b31, copper #a74722, logo teal #008e96. Georgia statements, Arial information. Floating ivory planes, shared copper inquiry marker. Calm, finite, seekable transitions. Avoid HUDs, chrome, rapid cuts, fabricated metrics and automatic-sale promises. Silent by design.

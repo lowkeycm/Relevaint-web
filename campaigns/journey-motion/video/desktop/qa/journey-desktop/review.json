@@ -1,0 +1,62 @@
+{
+  "render_sha256": "22faab5a11633b7048c93b19a14f90d3a4eacad748286632ca30def399d7afd9",
+  "source_sha256": "e30bc3c5d7ecaa678ce6fb437f5ee6550c30dbdb94ed156117f33ec3d13c12b0",
+  "viewed_frames": [
+    "52338554c218c7e7ea889d83e0a55e98070a42f988feabc1738fbe44b48cb31a",
+    "969637875916771952c98248f161c20b26d09d7840d0d6844e6fee6c188ee927",
+    "f7a20e5797a46e99baa89c37f45b15c20c20c20431a60fedc06f2eff26d0a375",
+    "98f808cd141411c61966db9b91580d86b13b9b1d3146bd006db8e2156a386820",
+    "22c0aefe6dce4b1470f3b1032a60727535ee277af520fc5c91a906fd0e9476ca",
+    "c4faf5e1bc37ada3d943f15010875cfcf552ff7666db7ce3f8e045db5cf0f61e",
+    "d13be71d128423578830d8f74ce0c132b538d62cff807cfe46da6df55f683cae",
+    "344beada8cd21725530f003211bab745016b0e832dcb5d52a427ea22e21451bc",
+    "5e5ff4901e210537acf572273f120ae6a0cc5471bc959be955d2fc765366a959",
+    "1ace6c3d277da2ddd474eaf5d7286eb8c98431632d04dc0f735330fdfa12eaeb",
+    "9dcd35eefacf9d80db6d2a858079f274241ae6a6579323adef2ec0a860c5c929",
+    "91ec1f9e3ff3fe3997b066fdfa8417669a129d071d4d8bc9b62f06444b20846f",
+    "8424e6e066da29a87cf7c3e325f765b3a56b49eeacbc9cfd752554a4fd29978e",
+    "c02403ea6b72cd9cacf3bede616f4953fa61c8af615f2ffebcf91b4fc3a83956",
+    "b066e2ec53ee94c8b861e1e05dd65b15d5c18029bfc0c6acb464313e30d660c6",
+    "bd32f774b8e34e2c4b3b9753149fa323e0fa6a225d965fc838020001597feb5e",
+    "97e815ca2599979f7d3e2b6e38ac44165be7cdfd2821d985481045a9b2008152",
+    "811cef43694322b39fff2e3df9d3f580b32ef61b57dee47ad83dc7a9633612f1",
+    "e3e157e79391a7eab25eb6455204b8d21698cbef2faa65f8208d38a43206cedd",
+    "b9a8e7ffa39f598fab0ca5811516d758a35092d87c96aa1b12977be3489eb0f4",
+    "1606ebbb2f789416dfc5ce23504da43d38e00eaa0ef4a4c49282608748a7275a"
+  ],
+  "unresolved_issues": [],
+  "checks": {
+    "message": {
+      "status": "pass",
+      "note": "All seven scene samples follow notice, inquiry, CRM, human-reviewed follow-up and a supported sale; no quantified or guaranteed result."
+    },
+    "brand": {
+      "status": "pass",
+      "note": "Compared current website palette, typography and positioning with every scene in desktop/mobile contact sheets."
+    },
+    "readability": {
+      "status": "pass",
+      "note": "Scene hero frames and embedded player checked at 1440px desktop and 390px phone. Main story text fits; mobile composition is reflowed."
+    },
+    "timing": {
+      "status": "pass",
+      "note": "22 seconds, 24fps, seven scenes. Entry, hero and exit frame samples inspected for each scene."
+    },
+    "transitions": {
+      "status": "pass",
+      "note": "Samples show staged fade/translate handoffs, route marker advances in order, outro settles. No clipped scene surfaces in inspected frames."
+    },
+    "playback": {
+      "status": "pass",
+      "note": "Both actual MP4s played from start to ended in Chromium in the built Next app: duration22, widths1920/1080, no media or page errors. Visual review used scene/transition frame samples."
+    },
+    "audio": {
+      "status": "not-applicable",
+      "note": "Silent by design; both media probes confirmed no audio stream."
+    },
+    "channel": {
+      "status": "pass",
+      "note": "Website manual-play controls and readable transcript; desktop16:9 and mobile4:5; no autoplay and no horizontal overflow at390px."
+    }
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "id": "journey-mobile",
+  "render_sha256": "530d36b7e018ba014353aa16d396186960cbbde95080343b80c94899e17ff9e6",
+  "source_sha256": "57fee601c2f2d5b2a9c1f0101a35ff21a7ad48e6da08f84097068d64a85b7c3f",
+  "media": {
+    "width": 1080,
+    "height": 1350,
+    "duration": 22.0,
+    "container_duration": 22.0,
+    "audio": false
+  },
+  "frames": [
+    {
+      "scene": "intro",
+      "kind": "entry",
+      "time": 0,
+      "file": "qa/journey-mobile/frame-000.png",
+      "sha256": "d421a6d6ce08f559d0e2072574bf0ba8a9929e6855947dc0400dfa67a9de3b9d"
+    },
+    {
+      "scene": "intro",
+      "kind": "hero",
+      "time": 1.166666,
+      "file": "qa/journey-mobile/frame-001.png",
+      "sha256": "e69f35a5639db16ec3c4db4e36f758ea56c03cf00c4b991566d32adddd5f127f"
+    },
+    {
+      "scene": "intro",
+      "kind": "exit",
+      "time": 2.333332,
+      "file": "qa/journey-mobile/frame-002.png",
+      "sha256": "aad94ebb6164782fe44bb784ebb930d42cbf75308fedfe3a2093e0611f140ebe"
+    },
+    {
+      "scene": "creative",
+      "kind": "entry",
+      "time": 2.416666,
+      "file": "qa/journey-mobile/frame-003.png",
+      "sha256": "ffb1ab9c335a184834ba1c1df9da3609208617918c382aa2bbdc70f7b5d3372f"
+    },
+    {
+      "scene": "creative",
+      "kind": "hero",
+      "time": 3.916666,
+      "file": "qa/journey-mobile/frame-004.png",
+      "sha256": "0d1e579df008f54ac76e45bce0d3f15386ca92c9b4e8b4fe7309242f92c9ecd9"
+    },
+    {
+      "scene": "creative",
+      "kind": "exit",
+      "time": 5.458332,
+      "file": "qa/journey-mobile/frame-005.png",
+      "sha256": "d0cf4f8c40ae6e4cd8d7b0f48099a1028de4f08dc12be83a0358a27dc316e1e4"
+    },
+    {
+      "scene": "websites",
+      "kind": "entry",
+      "time": 5.499999,
+      "file": "qa/journey-mobile/frame-006.png",
+      "sha256": "e78cac5c3aee8cdd04bbe845213638056097e974a7d19fd600b7003afa2136d3"
+    },
+    {
+      "scene": "websites",
+      "kind": "hero",
+      "time": 7.041666,
+      "file": "qa/journey-mobile/frame-007.png",
+      "sha256": "217ce95807fcf3ae816df1acc6a207c59d5f3e56c211d1003c9882b23398dca8"
+    },
+    {
+      "scene": "websites",
+      "kind": "exit",
+      "time": 8.541666,
+      "file": "qa/journey-mobile/frame-008.png",
+      "sha256": "901e518fd5c8f88d19729443e479de13cbf975089546a0e23fc64456f467f7b9"
+    },
+    {
+      "scene": "crm",
+      "kind": "entry",
+      "time": 8.624999,
+      "file": "qa/journey-mobile/frame-009.png",
+      "sha256": "1e6d5c13fc5175482f5bca1e9dacea1e56be00f3feb5c041d08fb7af5ebb60ad"
+    },
+    {
+      "scene": "crm",
+      "kind": "hero",
+      "time": 10.124999,
+      "file": "qa/journey-mobile/frame-010.png",
+      "sha256": "cded43f23759a9c9437f25915b0f689ff0977e2b84f4142e8e85ce64e7e77647"
+    },
+    {
+      "scene": "crm",
+      "kind": "exit",
+      "time": 11.624999,
+      "file": "qa/journey-mobile/frame-011.png",
+      "sha256": "37e42f21b25703585fc5f3352f917a882fa8c52a22555ef726735062f833e6e2"
+    },
+    {
+      "scene": "follow-up",
+      "kind": "entry",
+      "time": 11.708332,
+      "file": "qa/journey-mobile/frame-012.png",
+      "sha256": "76ead7d9b3a5dec2a1c9a6d5993879cc1475cc42cbb1c579f5e5a0db468b0747"
+    },
+    {
+      "scene": "follow-up",
+      "kind": "hero",
+      "time": 13.249999,
+      "file": "qa/journey-mobile/frame-013.png",
+      "sha256": "2b91d81dde86f49f5b971bc2335062d0a2dce72ac519ceb9775594c24bfb0f8d"
+    },
+    {
+      "scene": "follow-up",
+      "kind": "exit",
+      "time": 14.749999,
+      "file": "qa/journey-mobile/frame-014.png",
+      "sha256": "56c6525f480b0207acef1fb0b2b0ac5196d20b60a301f421b36f7d70d0a91bf5"
+    },
+    {
+      "scene": "connected-system",
+      "kind": "entry",
+      "time": 14.833332,
+      "file": "qa/journey-mobile/frame-015.png",
+      "sha256": "ef8077887af5e0e4f12d7f9be321310fd4ff9bb015673ba5805edbaa6c7bb572"
+    },
+    {
+      "scene": "connected-system",
+      "kind": "hero",
+      "time": 16.333332,
+      "file": "qa/journey-mobile/frame-016.png",
+      "sha256": "fd158872cebac504ee819afbe3a8c793e3991880f131f588c84f95efba42ff6a"
+    },
+    {
+      "scene": "connected-system",
+      "kind": "exit",
+      "time": 17.833332,
+      "file": "qa/journey-mobile/frame-017.png",
+      "sha256": "2c72ed734c2960b2875341b9d5700d0f679a011b4eeb0da5497908bb7d8bcde5"
+    },
+    {
+      "scene": "outro",
+      "kind": "entry",
+      "time": 17.916666,
+      "file": "qa/journey-mobile/frame-018.png",
+      "sha256": "c410eac7da43bffa97169c2ac04d2797f512fa0d147934537d2aec57c2702813"
+    },
+    {
+      "scene": "outro",
+      "kind": "hero",
+      "time": 19.916666,
+      "file": "qa/journey-mobile/frame-019.png",
+      "sha256": "d2551d946e81c6f8c9e7a499c4bd1146857d2d5255547c1911b70c73c9759308"
+    },
+    {
+      "scene": "outro",
+      "kind": "exit",
+      "time": 21.958332,
+      "file": "qa/journey-mobile/frame-020.png",
+      "sha256": "2cf79912b9811bc3bb8b98a44e163b312e39c6b12a00a84712b43024eac9f435"
+    }
+  ]
+}

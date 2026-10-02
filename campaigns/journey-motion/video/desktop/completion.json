@@ -1,0 +1,13 @@
+{
+  "status": "evidence-complete",
+  "source_sha256": "e30bc3c5d7ecaa678ce6fb437f5ee6550c30dbdb94ed156117f33ec3d13c12b0",
+  "request_sha256": "b0dff9d3050205e0b321321faa11060b80115888b4db4569fa50aa1be91722e0",
+  "deliverables": [
+    {
+      "id": "journey-desktop",
+      "file": "renders/journey.mp4",
+      "sha256": "22faab5a11633b7048c93b19a14f90d3a4eacad748286632ca30def399d7afd9"
+    }
+  ],
+  "limit": "Checks completeness and freshness; does not prove taste, viewing or conversion."
+}

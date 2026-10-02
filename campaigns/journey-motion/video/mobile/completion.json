@@ -1,0 +1,13 @@
+{
+  "status": "evidence-complete",
+  "source_sha256": "57fee601c2f2d5b2a9c1f0101a35ff21a7ad48e6da08f84097068d64a85b7c3f",
+  "request_sha256": "999f845dbd29e530188c068a6841f777067816ce495688af4c9fd109b20cdef4",
+  "deliverables": [
+    {
+      "id": "journey-mobile",
+      "file": "renders/journey.mp4",
+      "sha256": "530d36b7e018ba014353aa16d396186960cbbde95080343b80c94899e17ff9e6"
+    }
+  ],
+  "limit": "Checks completeness and freshness; does not prove taste, viewing or conversion."
+}
