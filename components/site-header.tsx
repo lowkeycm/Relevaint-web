@@ -22,7 +22,7 @@ export default function SiteHeader() {
       </nav>
       <DialogTrigger asChild><button type="button" className="mobile-menu" aria-label="Open menu"><Menu size={22}/></button></DialogTrigger>
     </header>
-    <DialogContent className="mobile-nav-dialog" showCloseButton={false}>
+    <DialogContent className="mobile-nav-dialog translate-y-0" showCloseButton={false}>
       <div className="mobile-nav-heading">
         <div><DialogTitle>How can we help your business?</DialogTitle><DialogDescription>One service or a connected system.</DialogDescription></div>
         <DialogClose asChild><button type="button" className="mobile-nav-close" aria-label="Close menu"><X size={22}/></button></DialogClose>
